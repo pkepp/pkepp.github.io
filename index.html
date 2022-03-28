@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head> 
+    <title>CSS Website Layout</title> 
+    <style> 
+        * { 
+            box-sizing: border-box; 
+        } 
+        .img { 
+            width: 125px; 
+            height: 125px; 
+        }
+        body { 
+            margin: 0; 
+            color: #ff6961;
+            background-color: #d291bc;
+        }
+        .header { 
+            background-color: #fde26c;
+            padding: 20px; 
+            text-align: center; 
+            background-color: #D2FFCF
+        } 
+        .topnav { 
+            overflow: hidden; 
+            background-color: #c1bbdd; 
+        }
+        .topnav a {
+            float: left; 
+            display: block; 
+            color: white; 
+            text-align: center; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+            background-color: #c1bbdd;
+        }
+        .topnav a:hover { 
+            background-color: pink; 
+            color: white; 
+        }
+        .column1 { 
+            float: left; 
+            width: 50%; 
+            padding: 15px; 
+            color: #FFB8A1;  
+            background-color: #c1e7e3;
+            border: 5px double powderblue; 
+        }
+        .column2 { 
+            float: right; 
+            width: 50%; 
+            padding: 15px; 
+            color: #FFB8A1;  
+            background-color: #80cee1;
+            border: 5px double powderblue; 
+        }
+        }
+        .row { 
+            content: "";
+            display: table; 
+            clear: both; 
+        }
+        @media sceen and (max-width:600px) { 
+            .column { 
+                width: 100%; 
+            }
+        }
+        .footer { 
+            color: #FF6961; 
+            background-color: #ffdfd3;
+            padding: 10px; 
+            text-align: center;
+        }
+</style> 
+</head> 
+<body> 
+<div class="header"> 
+    <h1>Shoes That I Like</h1> 
+    <p>Resize the broswer window to see the responsive effect.</p> 
+</div> 
+<div class="topnav"> 
+    <a href="https://www.journeys.com/collections/pastel">Pastels</a> 
+    <a href="https://www.lulus.com/categories/179_42/high-heels.html">Heels</a> 
+    <a href="https://www.shoecarnival.com/search?q=boots&lang=default">Boots</a> 
+</div> 
+<div class="column1"> 
+    <h2>Crocs</h2> 
+    <a href="https://www.crocs.com"><img src="https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/203506_10M_ALT140/crocs" width="125px" height="125px"></a> 
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> 
+</div> 
+<div class="column2"> 
+    <h2>Converse</h2> 
+    <a href="https://www.converse.com"><img src="https://cdn.shopify.com/s/files/1/0408/9909/products/converse-x-comme-des-garcons-play-all-star-chuck-70-hi-white_grande.jpg?v=1596148181" width="125px" height="125px"></a> 
+    <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc. et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> 
+</div> 
+</div> 
+<div class="footer"> 
+    <h1>Can't Go Without Shoes</h1> 
+</div> 
+</body> 
+</html> 
